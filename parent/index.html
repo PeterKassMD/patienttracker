@@ -1,0 +1,519 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Between Visits &mdash; Parent</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Parent Notes">
+<meta name="application-name" content="Parent Notes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#7A5A70">
+<meta name="color-scheme" content="light">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAACTklEQVR42u3dQVLCQBBA0YTylHgJ3OLatafwnm5TCBJNJt0z/f4yFVMBXnVAMzhfz5dJutfJUyA4BIfgEByCQ3AIDsEhOASHBIfgEByCQ3AIDsEhOASH4JDgEByCQ3AIDsEhOASH4BAcEhyCQ3AIDsEhOASH4BAcgkNwSHAIDsEhOASH4BAcgkPD9uIpSNXH1+fNlvfXt6iTmf2Pt7Qswom4rHQgY80OcBSVEeUDjj5khPiAQ3D0PzaOHx5wCA7BITgEh+AQHIJDcAgOwSHBITi0Q+4h3a1Ut3/CkZfFcnu/RFxWWslYvwMcRWV07QOO5jL69QGH4AgdG50ODzgEh+AQHIJDcAgOwSE4BIfqNsL9HOPdZQNHExbL7YjUvawMfJcNHG1l8FEUx/B32cAhOELHhuFhcggOwSE4lD3LIe+/afXbVTgefpbxC3iXlSefcot/Bj6RsX0fOCrKKO7DpxXBsW0Y1BweJofgEByCQ3AIDuUs+G8rlpzAsYrFcjsidS8rlpzAsemF56McDktO4BAcLceG4WFyCA7BITgEh+CQ4BAcgkNwCA7BITgEh+AQHBIcgkNwCA6NjeMf69h+/kjIQZKcxnTsWkCTQ2lw/An+o50PPkiS05gOX0IcMDlWPsLfdzvsIElOY4pYXB5zWXn6OLe/bIe99nkey+7N1/Ml8Kq2y/dztDhIktOYQr+NIhiHvCEVHIJDcAgOCQ7BITgEh+AQHIJDcAgOwSHBITgEh+AQHIJDcAgOwSE4JDgEh+AQHIJDcAgOwSE4VKVvqdGyaxh8PJMAAAAASUVORK5CYII=">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAACTklEQVR42u3dQVLCQBBA0YTylHgJ3OLatafwnm5TCBJNJt0z/f4yFVMBXnVAMzhfz5dJutfJUyA4BIfgEByCQ3AIDsEhOASHBIfgEByCQ3AIDsEhOASH4JDgEByCQ3AIDsEhOASH4BAcEhyCQ3AIDsEhOASH4BAcgkNwSHAIDsEhOASH4BAcgkPD9uIpSNXH1+fNlvfXt6iTmf2Pt7Qswom4rHQgY80OcBSVEeUDjj5khPiAQ3D0PzaOHx5wCA7BITgEh+AQHIJDcAgOwSHBITi0Q+4h3a1Ut3/CkZfFcnu/RFxWWslYvwMcRWV07QOO5jL69QGH4AgdG50ODzgEh+AQHIJDcAgOwSE4BIfqNsL9HOPdZQNHExbL7YjUvawMfJcNHG1l8FEUx/B32cAhOELHhuFhcggOwSE4lD3LIe+/afXbVTgefpbxC3iXlSefcot/Bj6RsX0fOCrKKO7DpxXBsW0Y1BweJofgEByCQ3AIDuUs+G8rlpzAsYrFcjsidS8rlpzAsemF56McDktO4BAcLceG4WFyCA7BITgEh+CQ4BAcgkNwCA7BITgEh+AQHBIcgkNwCA6NjeMf69h+/kjIQZKcxnTsWkCTQ2lw/An+o50PPkiS05gOX0IcMDlWPsLfdzvsIElOY4pYXB5zWXn6OLe/bIe99nkey+7N1/Ml8Kq2y/dztDhIktOYQr+NIhiHvCEVHIJDcAgOCQ7BITgEh+AQHIJDcAgOwSHBITgEh+AQHIJDcAgOwSE4JDgEh+AQHIJDcAgOwSE4VKVvqdGyaxh8PJMAAAAASUVORK5CYII=">
+<link rel="manifest" href='data:application/manifest+json,%7B%22name%22%3A%20%22Between%20Visits%20%28Parent%29%22%2C%20%22short_name%22%3A%20%22Parent%20Notes%22%2C%20%22start_url%22%3A%20%22.%22%2C%20%22scope%22%3A%20%22.%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22orientation%22%3A%20%22portrait%22%2C%20%22background_color%22%3A%20%22%23EFF2EC%22%2C%20%22theme_color%22%3A%20%22%237A5A70%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAACaElEQVR42u3dMW7CQBBAURvllOQSpCV1ak7BPVPQuEAkXs8ys6v3uiBnFVmf0RoMWa/nywKtTk4BAkJACAgBgYAQEAJCQCAgBISAEBAICAEhIAQEAkJACAgBISAQEAJCQAgIBISAEBACAgEhIASEgEBACAgBISAEBAJCQAgIAYGAEBACQkAgIASEgBAQCAgBISCm8OEUDOTnftv%2B%2BP35lf4nrf5v/Ijp1MlIQAOnUyEje6AZ6tl1pIBwFUaHoZIyhASEgIyfvCEkIASEgBAQAgIBISAEhIBAQAgIATEr90R3V/BGZgENmc72wWkyEtD70pkyI3ughHoajhQQrsLoMFRGH0ICQkDDjp8JhpCAEBACQkAICASEgBAQAgIBISAKm/CGsrlvIRXQ%2B9LZPigjAe1OR0b2QDH1NByJTTQC6jBUDCEBIaCk8WMICQgBISB48Nn4/26VvAgpoEO7bK9lCyjgAk1G9kABl/deCBAQAkoaP4aQgBBQ6vgxhASEgBAQAkJAICBSVHkvzFvfAopJZ/ugjAS0Ox0Z2QPF1NNwJDbRCKjDUDGEBISAksaPISQgBAQCQkAICAGBgBAQAkJACAgEhIAQEAICASEgBISAQEAICAEtS%2BtHlZ/%2BVtRS1daJXcoEwgQ69kR5cXzUUtXWiV3KBMIEan26/Hlk1FLV1oldqpP1er7kJvziM8t7T0rUUtXWiV1qtoCenqAjJyVqqWrrLCW/CLBKQNgDISAQEAJCQAgIBISAEBACAgEhIASEgEBACAgBISAEBAJCQAgIAYGAEBACQkAgIASEgBAQCAgBISAEhICg2S80vbv1ZvGcHwAAAABJRU5ErkJggg%3D%3D%22%2C%20%22sizes%22%3A%20%22192x192%22%2C%20%22type%22%3A%20%22image/png%22%2C%20%22purpose%22%3A%20%22any%22%7D%2C%20%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAHxklEQVR42u3cMU7rQBSGUYK8yngTcRvXrrOK7JOGCjFRgLEzl/%2BcFghcy%2B9%2BnkR6p%2Bv58gZAnneXAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAAAQAAAEAQAAA%2BNcmlwA43na/tb60zovrc4zT9XxxFYDXLn0xEADA6pcBAQCsfhnYmQ%2BBgQLbv/ur4QQAFFj9jgJOAIDt7yggAEDq9tcAAQByt78GCACQu/01QAAAEAAg7PHfIUAAgNztrwECAIAAAJEP4A4BAgCAAABhj94OAQIAgAAAIAAACADQzWhvu/sYQAAAEAAABAAAAQBAAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAEAAABAEAAABAAAAQAAAEAQAAAKGhyCaCc7X5rfWmdF9cHAYCUpd/6NjFAACBi9bd%2BUAYQAAha/TLAM3wIDP95%2B%2B/0ajgBAAVWv6MATgAQvf0dBRAAiN7%2BGoAAQO721wAEAHK3vwYgAAACAIQ9/jsEIACQu/01AAEAEAAg8gHcIUAAABAAIOzR2yFAAAAQAAAEAAABALoZ7W13HwMIAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgCAAAAIAAACAIAAACAAAAgAAOVNLgE/st1vrS%2Bt8%2BL6gACQsvRb3yYGIABErP7WD8oACABBq18GoAofArPX9t/p1QAnAAqsfkcBcAIgevs7CoAAEL39NQAEgNztrwEgAORufw0AAQBAAAh7/HcIAAEgd/trAAgAAAJA5AO4QwAIAAACQNijt0MACAAAAgCAAAAgAHQz2tvuPgYAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAA%2BDS5BKR58D9PrPPi%2BiAAkLL0W98mBggARKz%2B1g/KAAIAQatfBgjhQ2Bs/6NfDZwAoMDqdxTACQCit7%2BjAAIA0dtfAxAAyN3%2BGoAAQO721wAEAAABgLDHf4cABAByt78GIAAACABEPoA7BCAAAAgAhD16OwQgAAAIAAACAIAAQDejve3uYwAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAAPhicgmO9OB/jV/nxfUBBCBl6be%2BTQwAAYhY/a0flAFAAIJWvwwAh/Eh8KDbf6dXA3ACKLD6HQUAJ4Do7e8oAAhA9PbXAEAAcre/BgACkLv9NQAQAAAEIOzx3yEAEIDc7a8BgAAAIACRD%2BAOAYAAACAAYY/eDgGAAAAgAAAIAAAC0M1ob7v7GAAQAAAEAAABAEAAABAAAAFwCQAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAEAAAB4BnrvFT/e4xgBCMgAAACAIAAACAAfG%2Bctxp//ZcYwQhGQAAABIBqjxt//BuMYAQjCAAAAkCdh44uv90IRjCCAFDszuv4e41gBCMIAAACwNgPIN1/oxGMYAQBoMBduNPvMoIRjCAADH0v7vpbjGAEIwgAg96RB9zxRjCCEaKcrueLq9DXdr9Vv92NYAQjOAHw%2Bnv0JXe8EYxgBCcAXvn4M8LtbgQjGEEAOPTWH%2B12N4IRjCAA7PgPoMqNbgQjGEEAAKjNh8AAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAAAIAAAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAAAIAAAAuASAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAAAgAAAIAgAAAIAAACAAAAgBAbR%2B36t9oVaJwpAAAAABJRU5ErkJggg%3D%3D%22%2C%20%22sizes%22%3A%20%22512x512%22%2C%20%22type%22%3A%20%22image/png%22%2C%20%22purpose%22%3A%20%22any%22%7D%5D%7D'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300..800&family=Newsreader:opsz,wght@6..72,300..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EFF2EC; --card:#FBFCF9; --ink:#22302A; --ink-soft:#5E6F66; --ink-faint:#93A199;
+  --line:#DCE3D9; --accent:#7A5A70; --wash:#F0E6ED; --warn:#A8503C; --r:10px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+html,body{margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:'Karla',system-ui,-apple-system,sans-serif;
+  font-size:16px;line-height:1.45;padding-bottom:88px;-webkit-font-smoothing:antialiased;
+  overscroll-behavior-y:contain;min-height:100vh;min-height:100dvh;
+  padding-top:env(safe-area-inset-top)}
+@media (display-mode:standalone){
+  body{padding-top:calc(env(safe-area-inset-top) + 6px)}
+  header{padding-top:14px}
+}
+input,textarea,select{-webkit-user-select:text;user-select:text}
+.wrap{max-width:660px;margin:0 auto;padding:0 16px}
+button{font:inherit;color:inherit;cursor:pointer;border:none;background:none}
+input,textarea{font:inherit;color:inherit}
+
+header{padding:22px 0 14px}
+.hlead{font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.hsub{font-size:13.5px;color:var(--ink-soft);margin-top:3px}
+.strip{display:flex;gap:5px;align-items:flex-end;height:30px;margin-top:16px}
+.tick{flex:1;min-width:6px;border-radius:3px;background:var(--line);height:9px}
+.tick.on{background:var(--accent);height:26px}
+.tick.now{outline:1.5px solid var(--ink);outline-offset:2px}
+.striplab{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-faint);margin-top:8px}
+
+.block{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:14px}
+.blab{font-size:15px;font-weight:700;margin:0 0 2px}
+.bhint{font-size:13px;color:var(--ink-soft);margin:0 0 16px}
+
+.item{margin-bottom:22px}
+.item:last-child{margin-bottom:4px}
+.q{font-size:14.5px;display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:2px}
+.val{font-weight:700;font-size:17px;color:var(--accent);font-variant-numeric:tabular-nums;min-width:26px;text-align:right}
+.item.unset .val{color:var(--ink-faint);font-weight:400;font-size:14px}
+.sldwrap{padding:2px 0}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:34px;background:transparent;margin:0;display:block}
+input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:var(--line)}
+input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:var(--line)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;
+  background:var(--accent);border:3px solid var(--card);box-shadow:0 1px 3px rgba(0,0,0,.22);margin-top:-11px}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--accent);
+  border:3px solid var(--card);box-shadow:0 1px 3px rgba(0,0,0,.22)}
+.item.unset input[type=range]::-webkit-slider-thumb{background:#C3CDC5;box-shadow:none}
+.item.unset input[type=range]::-moz-range-thumb{background:#C3CDC5;box-shadow:none}
+input[type=range]:focus-visible{outline:2px solid var(--ink);outline-offset:4px;border-radius:4px}
+.anch{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-faint);margin-top:-2px}
+
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.field{flex:1;min-width:132px;margin-bottom:14px}
+.flab{font-size:13.5px;color:var(--ink-soft);display:block;margin-bottom:5px}
+input[type=number],input[type=text],input[type=date],input[type=time],textarea{
+  width:100%;padding:10px 11px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+textarea{min-height:80px;resize:vertical;line-height:1.45}
+input:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;background:#fff}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{padding:8px 12px;border-radius:16px;background:var(--paper);border:1px solid var(--line);font-size:13.5px;color:var(--ink-soft)}
+.chip[aria-pressed="true"]{background:var(--warn);border-color:var(--warn);color:#fff;font-weight:600}
+.sev{margin-top:12px;padding:11px;background:var(--paper);border-radius:8px}
+.sevrow{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:13.5px;flex-wrap:wrap}
+.sevrow:last-child{margin-bottom:0}
+.sevname{flex:1;min-width:110px;font-weight:600}
+.sevbtn{padding:6px 11px;border-radius:6px;border:1px solid var(--line);background:var(--card);font-size:12.5px}
+.sevbtn[aria-pressed="true"]{background:var(--warn);border-color:var(--warn);color:#fff}
+.otherbox{margin-top:6px}
+.otherbox input{background:var(--card)}
+
+.save{width:100%;padding:15px;border-radius:var(--r);background:var(--accent);color:#fff;font-weight:700;font-size:16px}
+.ghost{padding:11px 16px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);font-weight:600;font-size:14.5px}
+.saved{text-align:center;padding:11px;font-size:14px;color:var(--accent);font-weight:600;min-height:20px}
+
+.install{background:var(--wash);border:1.5px solid var(--accent);border-radius:var(--r);
+  padding:14px 15px;margin-bottom:16px;display:none}
+.install.on{display:block}
+.install strong{display:block;font-size:14.5px;color:var(--accent);margin-bottom:4px}
+.install p{margin:0 0 10px;font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+.install .ib{display:flex;gap:8px;flex-wrap:wrap}
+.install .ib button{padding:8px 13px;border-radius:7px;font-size:13px;font-weight:600;
+  border:1px solid var(--accent);background:var(--card);color:var(--accent)}
+.install .ib button.solid{background:var(--accent);color:#fff;border-color:var(--accent)}
+.glyph{display:inline-block;font-size:15px;line-height:1;vertical-align:-1px}
+
+.crisis{background:#fff;border:1.5px solid var(--warn);border-radius:var(--r);padding:14px;margin-bottom:16px}
+.crisis strong{color:var(--warn);display:block;margin-bottom:4px;font-size:14.5px}
+.crisis p{margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+
+.hitem{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:8px;padding:12px 14px;margin-bottom:8px;display:block;width:100%;text-align:left}
+.hdate{font-weight:700;font-size:14.5px}
+.hmeta{font-size:13px;color:var(--ink-soft);margin-top:3px}
+.empty{text-align:center;padding:44px 20px;color:var(--ink-faint);font-size:14.5px;line-height:1.5}
+
+.sum h1{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:28px;margin:0 0 4px}
+.sum h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:22px;margin:26px 0 10px}
+.sumhead{border-bottom:2px solid var(--ink);padding-bottom:12px}
+.sumhead p{margin:2px 0 0;font-size:13.5px;color:var(--ink-soft)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:12px;color:var(--ink-soft);font-weight:600;padding:6px 8px 6px 0;border-bottom:1px solid var(--line)}
+td{padding:8px 8px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700}
+.trend{font-size:12.5px;color:var(--ink-soft);white-space:nowrap;font-weight:400}
+.spark{font-variant-numeric:tabular-nums;font-size:12.5px;color:var(--ink-soft);letter-spacing:.06em}
+.note{background:var(--card);border-left:3px solid var(--accent);padding:10px 13px;margin-bottom:8px;border-radius:0 6px 6px 0}
+.note .nd{font-size:12px;color:var(--ink-faint);margin-bottom:3px}
+.note p{margin:0;font-size:14px;line-height:1.5}
+.mini{font-size:12.5px;color:var(--ink-faint);line-height:1.55}
+
+nav{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);
+  display:flex;padding:6px 4px calc(6px + env(safe-area-inset-bottom));z-index:20}
+.tab{flex:1;padding:8px 2px;font-size:11.5px;font-weight:600;color:var(--ink-faint);text-align:center;border-radius:8px}
+.tab span{display:block;font-size:17px;line-height:1.35;font-weight:400}
+.tab[aria-selected="true"]{color:var(--accent);background:var(--wash)}
+.view{display:none}.view.on{display:block}.spacer{height:8px}
+
+@media print{
+  body{background:#fff;padding:0;font-size:11.5pt}
+  nav,header,.noprint{display:none!important}
+  .view{display:none!important}.view.on{display:block!important}
+  .note,table{page-break-inside:avoid}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="hlead" id="greet">Between visits</div>
+  <div class="hsub" id="since">Set the appointment dates in Settings</div>
+  <div class="strip" id="strip"></div>
+  <div class="striplab"><span id="stripA"></span><span>This week</span></div>
+</header>
+
+<div class="view on" id="v-log">
+  <div class="install" id="install">
+    <strong>Add this to your home screen</strong>
+    <p id="installTxt"></p>
+    <div class="ib">
+      <button class="solid" id="installBtn" style="display:none">Install</button>
+      <button id="installDone">Done, hide this</button>
+    </div>
+  </div>
+  <div id="form"></div>
+  <button class="save" id="saveBtn">Save this week</button>
+  <div class="saved" id="savedMsg"></div>
+  <div class="spacer"></div>
+</div>
+
+<div class="view" id="v-hist">
+  <div class="block"><p class="blab">Every week logged</p>
+    <p class="bhint" style="margin:0">Tap a week to reopen and change it.</p></div>
+  <div id="histList"></div>
+</div>
+
+<div class="view sum" id="v-sum">
+  <div id="sumBody"></div>
+  <div class="noprint" style="margin:20px 0 8px">
+    <button class="ghost" onclick="window.print()" style="width:100%">Print or save as PDF</button></div>
+</div>
+
+<div class="view" id="v-set">
+  <div class="crisis"><strong>No one is reading this</strong>
+    <p>Nothing here is sent to the doctor's office, to a server, or to anyone else. It stays on this device, and nobody sees it until you show it to the doctor at an appointment. If you are worried about their immediate safety, call or text <strong style="display:inline">988</strong>, call 911, or go to the nearest emergency room. Do not wait for the appointment.</p></div>
+
+  <div class="block"><p class="blab">Setup</p>
+    <p class="bhint">A first name or nickname is plenty. Don't enter a full name or birthdate &mdash; this works fine without one.</p>
+    <div class="field"><label class="flab" for="setName">First name or nickname</label>
+      <input type="text" id="setName" placeholder="Optional"></div>
+    <div class="row">
+      <div class="field"><label class="flab" for="setLast">Last appointment</label><input type="date" id="setLast"></div>
+      <div class="field"><label class="flab" for="setNext">Next appointment</label><input type="date" id="setNext"></div>
+    </div></div>
+
+  <div class="block"><p class="blab">What to track</p>
+    <p class="bhint">Turn off anything that doesn't apply. Shorter is better &mdash; a few minutes once a week is the difference between using this and quietly abandoning it.</p>
+    <div id="toggles"></div></div>
+
+  <div class="block"><p class="blab">Your data</p>
+    <p class="bhint">Saved in this browser on this device only. Clearing browser data, switching browsers, or getting a new phone will lose it. Back up now and then.</p>
+    <div class="row">
+      <button class="ghost" id="exportBtn" style="flex:1">Back up to a file</button>
+      <button class="ghost" id="importBtn" style="flex:1">Restore from a file</button></div>
+    <input type="file" id="importFile" accept=".json" style="display:none">
+    <div class="spacer"></div>
+    <button class="ghost" id="clearBtn" style="width:100%;color:var(--warn);border-color:var(--warn)">Delete everything</button></div>
+
+  <div class="block"><p class="blab">How to use this</p>
+    <p class="mini">Fill this in once a week, on a day that's easy to remember, answering for the week as a whole.<br><br>Rate what you observed, not what you concluded. &quot;Stayed in his room most of the weekend&quot; is data; &quot;he's depressed again&quot; is a diagnosis, and that one is the doctor's job.<br><br>If you barely saw them in a given week, skip it rather than guessing. A blank week is honest and a guessed one isn't.<br><br>This is a separate app from theirs and the two don't talk to each other. Neither of you can see the other's entries. Whether you show each other is up to you, and worth agreeing on before you start.<br><br>Before the appointment, open Summary and either print it or hand the doctor the phone.</p></div>
+  <div class="spacer"></div>
+</div>
+</div>
+
+<nav>
+  <button class="tab" data-v="log" aria-selected="true"><span>&#9998;</span>This week</button>
+  <button class="tab" data-v="hist" aria-selected="false"><span>&#8801;</span>History</button>
+  <button class="tab" data-v="sum" aria-selected="false"><span>&#9636;</span>Summary</button>
+  <button class="tab" data-v="set" aria-selected="false"><span>&#9881;</span>Settings</button>
+</nav>
+
+<script>
+var CFG = {"who": "parent", "head": "Between visits", "greet": "Notes on %s", "sumTitle": "What a parent observed", "sumNotes": "Notes for the appointment", "seHint": "Tap anything you noticed this week. Leave it blank if nothing stood out.", "otherPh": "Describe what you noticed", "notesLab": "Notes for the appointment", "notesHint": "What seems different since the last appointment? Anything you'd want raised.", "disclaimer": "Parent-observed, recorded weekly. Not a validated instrument and not monitored between appointments.", "se": ["Nausea or stomach upset", "Headache", "Dizzy or lightheaded", "Sleepy in the daytime", "Trouble falling asleep", "Appetite up", "Appetite down", "Dry mouth", "Sweating", "Jittery or wired", "Feeling flat or numb", "Shaky hands", "Something else"], "groups": [{"id": "dep", "toggle": true, "lab": "Depression", "hint": "Rate what you actually saw this week, not what you concluded. 1 is the worst, 8 is the best.", "items": [{"k": "d_mood", "q": "How has their mood been?", "short": "mood", "lo": "Very low", "hi": "Very good", "dir": 1}, {"k": "d_energy", "q": "How has their energy been?", "short": "energy", "lo": "None", "hi": "Full", "dir": 1}, {"k": "d_interest", "q": "How has their interest in activities been?", "short": "interest", "lo": "None", "hi": "Full", "dir": 1}, {"k": "d_sleep", "q": "How has their sleep been?", "short": "sleep", "lo": "Terrible", "hi": "Great", "dir": 1}]}, {"id": "anx", "toggle": true, "lab": "Anxiety", "hint": "Here 1 means none at all this week and 8 means as bad as it gets.", "items": [{"k": "a_level", "q": "How significant has their anxiety been?", "short": "anxiety", "lo": "None", "hi": "Severe", "dir": -1}, {"k": "a_avoid", "q": "How much have they avoided things?", "short": "avoidance", "lo": "None", "hi": "Constant", "dir": -1}, {"k": "a_agit", "q": "How much agitation or restlessness have you seen?", "short": "agitation", "lo": "None", "hi": "Constant", "dir": -1}, {"k": "a_catas", "q": "How much time have they spent in \"what if\" thoughts?", "short": "what-if", "lo": "None", "hi": "Constant", "dir": -1}]}, {"id": "adhd", "toggle": true, "lab": "Focus", "hint": "1 means no trouble at all this week, 8 means as much trouble as it gets.", "items": [{"k": "f_start", "q": "How much difficulty starting tasks?", "short": "starting", "lo": "None", "hi": "Severe", "dir": -1}, {"k": "f_hold", "q": "How much difficulty staying focused?", "short": "focus", "lo": "None", "hi": "Severe", "dir": -1}, {"k": "f_distract", "q": "How distractible have they seemed?", "short": "distractible", "lo": "Not at all", "hi": "Extremely", "dir": -1}, {"k": "f_finish", "q": "How much difficulty finishing what they started?", "short": "finishing", "lo": "None", "hi": "Severe", "dir": -1}]}, {"id": "irr", "toggle": true, "lab": "Irritability", "hint": "Often the first thing a parent notices before anything else changes.", "items": [{"k": "p_irrit", "q": "How much irritability or short temper have you seen?", "short": "irritability", "lo": "None", "hi": "Constant", "dir": -1}]}, {"id": "beh", "toggle": false, "lab": "Sleep, movement, people", "hint": "Estimates for the week are fine.", "items": [{"k": "x_social", "q": "How much time have they spent with other people?", "short": "social", "lo": "None", "hi": "A lot", "dir": 1}], "fields": [{"k": "s_hours", "t": "number", "lab": "Hours of sleep on a typical night", "ph": "estimate"}, {"k": "s_bed", "t": "time", "lab": "Roughly going to bed around"}, {"k": "s_up", "t": "time", "lab": "Roughly waking up around"}, {"k": "x_min", "t": "number", "lab": "Minutes active in the week", "ph": "e.g. 150"}, {"k": "x_what", "t": "text", "lab": "What they did", "ph": "optional"}, {"k": "x_who", "t": "text", "lab": "Who they saw", "ph": "optional"}]}], "numeric": [{"k": "s_hours", "lab": "Sleep, hours on a typical night", "round": false}, {"k": "x_min", "lab": "Active minutes per week", "round": true}], "timefields": [{"k": "s_bed", "lab": "Going to bed around"}, {"k": "s_up", "lab": "Waking up around"}], "freetext": [{"k": "x_what", "lab": "Activity"}, {"k": "x_who", "lab": "People seen"}]};
+var MAX = 8;
+var OTHER = 'Something else';
+
+var mem={};
+var LS=(function(){try{localStorage.setItem('_t','1');localStorage.removeItem('_t');return localStorage;}catch(e){return null;}})();
+function put(k,v){var s=JSON.stringify(v);if(LS){try{LS.setItem(k,s);return;}catch(e){}}mem[k]=s;}
+function get(k,d){var s=LS?LS.getItem(k):mem[k];if(s==null&&mem[k]!=null)s=mem[k];if(s==null)return d;try{return JSON.parse(s);}catch(e){return d;}}
+
+var KE='bv.'+CFG.who+'.weeks', KS='bv.'+CFG.who+'.settings';
+var entries=get(KE,{});
+var settings=get(KS,{name:'',last:'',next:''});
+CFG.groups.forEach(function(g){if(g.toggle&&settings[g.id]===undefined)settings[g.id]=true;});
+
+var SEV=['Mild','Moderate','Bad'];
+var draft={}, editWeek;
+
+function isoOf(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function weekOf(d){var x=new Date(d.getFullYear(),d.getMonth(),d.getDate());
+  x.setDate(x.getDate()-((x.getDay()+6)%7));return isoOf(x);}   /* Monday */
+function thisWeek(){return weekOf(new Date());}
+function weekFromISO(s){var p=s.split('-');return weekOf(new Date(p[0],p[1]-1,p[2]));}
+function addWeeks(s,n){var p=s.split('-');var d=new Date(p[0],p[1]-1,p[2]);d.setDate(d.getDate()+7*n);return isoOf(d);}
+function weekDiff(a,b){return Math.round((new Date(b+'T00:00')-new Date(a+'T00:00'))/(7*864e5));}
+function pretty(w){var p=w.split('-');var d=new Date(p[0],p[1]-1,p[2]);
+  return 'Week of '+d.toLocaleDateString(undefined,{month:'short',day:'numeric'});}
+function prettyDate(s){if(!s)return'';var p=s.split('-');var d=new Date(p[0],p[1]-1,p[2]);
+  return d.toLocaleDateString(undefined,{month:'short',day:'numeric'});}
+function esc(s){return String(s==null?'':s).replace(/[<>&"]/g,function(c){return{'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];});}
+function activeGroups(){return CFG.groups.filter(function(g){return !g.toggle||settings[g.id];});}
+function avg(a){return a.length?a.reduce(function(x,y){return x+y;},0)/a.length:null;}
+
+editWeek=thisWeek();
+function loadDraft(){var e=entries[editWeek];draft=e?JSON.parse(JSON.stringify(e)):{se:{},notes:'',seOther:''};if(!draft.se)draft.se={};}
+
+function renderForm(){
+  var host=document.getElementById('form'), h='';
+  if(editWeek!==thisWeek()){
+    h+='<div class="block" style="border-color:var(--warn)"><p class="blab">Editing '+pretty(editWeek)+'</p>'+
+       '<p class="bhint" style="margin:0">This is not the current week. <button class="ghost" style="padding:6px 11px;margin-top:9px" onclick="jumpNow()">Back to this week</button></p></div>';
+  }
+  activeGroups().forEach(function(g){
+    h+='<div class="block"><p class="blab">'+g.lab+'</p>'+(g.hint?'<p class="bhint">'+g.hint+'</p>':'<div style="height:12px"></div>');
+    (g.items||[]).forEach(function(it){
+      var v=draft[it.k], un=(v==null);
+      h+='<div class="item'+(un?' unset':'')+'" id="i_'+it.k+'">'+
+         '<div class="q"><span>'+it.q+'</span><span class="val">'+(un?'&mdash;':v)+'</span></div>'+
+         '<div class="sldwrap"><input type="range" min="1" max="'+MAX+'" step="1" value="'+(un?4:v)+'" data-k="'+it.k+'" aria-label="'+esc(it.q)+'"></div>'+
+         '<div class="anch"><span>1 &middot; '+it.lo+'</span><span>'+it.hi+' &middot; '+MAX+'</span></div></div>';
+    });
+    if(g.fields){
+      h+='<div class="row" style="margin-top:16px">';
+      g.fields.forEach(function(f){
+        h+='<div class="field"><label class="flab" for="f_'+f.k+'">'+f.lab+'</label>'+
+           '<input type="'+f.t+'" id="f_'+f.k+'" data-f="'+f.k+'" placeholder="'+(f.ph||'')+'" value="'+esc(draft[f.k]||'')+'"></div>';
+      });
+      h+='</div>';
+    }
+    h+='</div>';
+  });
+
+  h+='<div class="block"><p class="blab">Side effects</p><p class="bhint">'+CFG.seHint+'</p><div class="chips">';
+  CFG.se.forEach(function(s){h+='<button class="chip" aria-pressed="'+(!!draft.se[s])+'" data-se="'+esc(s)+'">'+s+'</button>';});
+  h+='</div>';
+  var picked=Object.keys(draft.se);
+  if(picked.length){
+    h+='<div class="sev">';
+    picked.forEach(function(s){
+      h+='<div class="sevrow"><span class="sevname">'+esc(s)+'</span>';
+      SEV.forEach(function(v){h+='<button class="sevbtn" aria-pressed="'+(draft.se[s]===v)+'" data-sev="'+esc(s)+'" data-v="'+v+'">'+v+'</button>';});
+      h+='</div>';
+      if(s===OTHER){
+        h+='<div class="otherbox"><input type="text" id="seOther" placeholder="'+CFG.otherPh+'" value="'+esc(draft.seOther||'')+'"></div>';
+      }
+    });
+    h+='</div>';
+  }
+  h+='</div>';
+
+  h+='<div class="block"><p class="blab">'+CFG.notesLab+'</p><p class="bhint">'+CFG.notesHint+'</p>'+
+     '<textarea id="notes" placeholder="Optional">'+esc(draft.notes||'')+'</textarea></div>';
+
+  host.innerHTML=h;
+
+  host.querySelectorAll('input[type=range]').forEach(function(r){
+    function set(){var k=r.dataset.k;draft[k]=+r.value;
+      var box=document.getElementById('i_'+k);box.classList.remove('unset');
+      box.querySelector('.val').textContent=r.value;}
+    r.addEventListener('input',set);
+    r.addEventListener('pointerdown',function(){setTimeout(set,0);});
+    r.addEventListener('keydown',function(){setTimeout(set,0);});
+  });
+  host.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){
+    var s=b.dataset.se;
+    if(draft.se[s]){delete draft.se[s];if(s===OTHER)draft.seOther='';}
+    else draft.se[s]='Mild';
+    renderForm();};});
+  host.querySelectorAll('.sevbtn').forEach(function(b){b.onclick=function(){
+    draft.se[b.dataset.sev]=b.dataset.v;renderForm();};});
+  host.querySelectorAll('[data-f]').forEach(function(el){el.oninput=function(){draft[el.dataset.f]=el.value;};});
+  var o=document.getElementById('seOther');if(o)o.oninput=function(){draft.seOther=o.value;};
+  var n=document.getElementById('notes');if(n)n.oninput=function(){draft.notes=n.value;};
+}
+function jumpNow(){editWeek=thisWeek();loadDraft();renderForm();window.scrollTo(0,0);}
+
+document.getElementById('saveBtn').onclick=function(){
+  var any=Object.keys(draft).some(function(k){
+    return ['se','notes','seOther','week','savedAt'].indexOf(k)<0&&draft[k]!=null&&draft[k]!=='';});
+  if(!any&&!draft.notes&&!Object.keys(draft.se).length){msg('Nothing filled in yet.');return;}
+  draft.week=editWeek;draft.savedAt=new Date().toISOString();
+  entries[editWeek]=JSON.parse(JSON.stringify(draft));put(KE,entries);msg('Saved.');strip();};
+function msg(t){var m=document.getElementById('savedMsg');m.textContent=t;clearTimeout(m._t);
+  m._t=setTimeout(function(){m.textContent='';},2200);}
+
+function strip(){
+  var el=document.getElementById('strip'),now=thisWeek();
+  var start=settings.last?weekFromISO(settings.last):now, n=weekDiff(start,now)+1;
+  if(n<1||n>40){start=now;n=1;}
+  if(n<8){start=addWeeks(now,-7);n=8;}
+  var h='';
+  for(var i=0;i<n;i++){var w=addWeeks(start,i);
+    h+='<div class="tick'+(entries[w]?' on':'')+(w===now?' now':'')+'" title="'+w+'"></div>';}
+  el.innerHTML=h;
+  document.getElementById('stripA').textContent=settings.last?'Last visit '+prettyDate(settings.last):'Last 8 weeks';
+  document.getElementById('greet').textContent=settings.name?CFG.greet.replace('%s',settings.name):CFG.head;
+  var s=document.getElementById('since');
+  if(settings.next){var dd=Math.round((new Date(settings.next+'T00:00')-new Date(isoOf(new Date())+'T00:00'))/864e5);
+    s.textContent=dd>1?dd+' days until the next appointment':dd===1?'Appointment tomorrow':dd===0?'Appointment today':'Set the next appointment in Settings';}
+  else s.textContent=settings.last?'Logging since the last appointment':'Set the appointment dates in Settings';
+}
+
+function renderHist(){
+  var keys=Object.keys(entries).sort().reverse(),el=document.getElementById('histList');
+  if(!keys.length){el.innerHTML='<div class="empty">Nothing logged yet.<br>Your first week will show up here.</div>';return;}
+  el.innerHTML=keys.map(function(k){var e=entries[k],n=Object.keys(e.se||{}).length,b=[],first=null;
+    activeGroups().forEach(function(g){(g.items||[]).forEach(function(it){
+      if(first===null&&e[it.k]!=null)first=it.short+' '+e[it.k]+'/'+MAX;});});
+    if(first)b.push(first);
+    if(n)b.push(n+' side effect'+(n>1?'s':''));
+    if(e.notes&&e.notes.trim())b.push('a note');
+    return '<button class="hitem" data-w="'+e.week+'"><div class="hdate">'+pretty(e.week)+
+      '</div><div class="hmeta">'+(b.length?b.join(' &middot; '):'saved')+'</div></button>';}).join('');
+  el.querySelectorAll('.hitem').forEach(function(b){b.onclick=function(){
+    editWeek=b.dataset.w;loadDraft();renderForm();show('log');window.scrollTo(0,0);};});
+}
+
+function renderSum(){
+  var now=thisWeek(), from=settings.last?weekFromISO(settings.last):'0000-01-01';
+  var all=Object.keys(entries).map(function(k){return entries[k];})
+    .filter(function(e){return e.week>=from&&e.week<=now;}).sort(function(a,b){return a.week<b.week?-1:1;});
+  var body=document.getElementById('sumBody');
+  if(!all.length){body.innerHTML='<div class="empty">Nothing logged in this stretch yet.<br>Weeks appear here once one is saved.</div>';return;}
+  var span=settings.last?weekDiff(from,now)+1:all.length;
+  var half=Math.ceil(all.length/2),A=all.slice(0,half),B=all.slice(half);
+
+  var h='<div class="sumhead"><h1>'+(settings.name?esc(settings.name)+' &mdash; ':'')+CFG.sumTitle+'</h1>'+
+    '<p>'+(settings.last?prettyDate(settings.last)+' to '+prettyDate(isoOf(new Date())):'Through '+prettyDate(isoOf(new Date())))+
+    ' &middot; '+all.length+' of '+span+' week'+(span>1?'s':'')+' logged</p></div>';
+
+  activeGroups().forEach(function(g){
+    if(!g.items||!g.items.length)return;
+    var rows='';
+    g.items.forEach(function(it){
+      var series=all.map(function(e){return e[it.k];});
+      var vals=series.filter(function(v){return v!=null;});
+      if(!vals.length)return;
+      var m=avg(vals);
+      var a=avg(A.map(function(e){return e[it.k];}).filter(function(v){return v!=null;}));
+      var b=avg(B.map(function(e){return e[it.k];}).filter(function(v){return v!=null;}));
+      var tr='&mdash;';
+      if(a!=null&&b!=null&&Math.abs(b-a)>=0.6){
+        tr=(((b-a)*it.dir>0)?'better':'worse')+' by '+Math.abs(b-a).toFixed(1);}
+      rows+='<tr><td>'+it.q+'</td><td class="num">'+m.toFixed(1)+'</td>'+
+            '<td class="spark">'+series.map(function(v){return v==null?'&middot;':v;}).join(' ')+'</td>'+
+            '<td class="trend">'+tr+'</td></tr>';});
+    if(rows)h+='<h2>'+g.lab+'</h2><table><tr><th>&nbsp;</th><th style="text-align:right">Avg /'+MAX+'</th>'+
+      '<th>Week by week</th><th>First half &rarr; second</th></tr>'+rows+'</table>';
+  });
+
+  function stat(k){var v=all.map(function(e){return parseFloat(e[k]);}).filter(function(x){return !isNaN(x);});
+    return v.length?{avg:avg(v),n:v.length,sum:v.reduce(function(a,b){return a+b;},0)}:null;}
+  var num='';
+  CFG.numeric.forEach(function(f){var s=stat(f.k);if(!s)return;
+    num+='<tr><td>'+f.lab+'</td><td class="num">'+(f.round?Math.round(s.avg):s.avg.toFixed(1))+'</td>'+
+      '<td class="trend">across '+s.n+' week'+(s.n>1?'s':'')+'</td></tr>';});
+  CFG.timefields.forEach(function(f){
+    var v=all.map(function(e){return e[f.k];}).filter(Boolean);
+    if(v.length)num+='<tr><td>'+f.lab+'</td><td class="num">'+v[v.length-1]+'</td>'+
+      '<td class="trend">'+(v.length>1?'earlier weeks: '+v.slice(0,-1).join(', '):'one week')+'</td></tr>';});
+  if(num)h+='<h2>Sleep and activity</h2><table>'+num+'</table>';
+
+  var free=[];
+  CFG.freetext.forEach(function(f){
+    var v=all.filter(function(e){return e[f.k]&&String(e[f.k]).trim();});
+    if(v.length)free.push('<tr><td>'+f.lab+'</td><td class="trend" colspan="2" style="white-space:normal">'+
+      esc(v.map(function(e){return e[f.k];}).join('; '))+'</td></tr>');});
+  if(free.length)h+='<table style="margin-top:10px">'+free.join('')+'</table>';
+
+  var tally={};
+  all.forEach(function(e){Object.keys(e.se||{}).forEach(function(s){
+    tally[s]=tally[s]||{n:0,worst:0,txt:[]};tally[s].n++;
+    tally[s].worst=Math.max(tally[s].worst,SEV.indexOf(e.se[s]));
+    if(s===OTHER&&e.seOther&&e.seOther.trim())tally[s].txt.push(e.seOther.trim());});});
+  var tk=Object.keys(tally).sort(function(a,b){return tally[b].n-tally[a].n;});
+  h+='<h2>Side effects</h2>';
+  if(tk.length){h+='<table><tr><th>&nbsp;</th><th style="text-align:right">Weeks</th><th>Worst</th></tr>';
+    tk.forEach(function(s){
+      var label=esc(s);
+      if(s===OTHER&&tally[s].txt.length)label+=': <span class="trend">'+esc(tally[s].txt.join('; '))+'</span>';
+      h+='<tr><td style="white-space:normal">'+label+'</td><td class="num">'+tally[s].n+' of '+all.length+
+      '</td><td class="trend">'+SEV[tally[s].worst]+'</td></tr>';});h+='</table>';}
+  else h+='<p class="mini">None reported.</p>';
+
+  var notes=all.filter(function(e){return e.notes&&e.notes.trim();});
+  if(notes.length){h+='<h2>'+CFG.sumNotes+'</h2>';
+    notes.forEach(function(e){h+='<div class="note"><div class="nd">'+pretty(e.week)+'</div><p>'+esc(e.notes)+'</p></div>';});}
+
+  h+='<p class="mini" style="margin-top:22px;padding-top:12px;border-top:1px solid var(--line)">'+CFG.disclaimer+'</p>';
+  body.innerHTML=h;
+}
+
+function renderSet(){
+  document.getElementById('setName').value=settings.name||'';
+  document.getElementById('setLast').value=settings.last||'';
+  document.getElementById('setNext').value=settings.next||'';
+  var T=CFG.groups.filter(function(g){return g.toggle;});
+  document.getElementById('toggles').innerHTML=T.map(function(g){
+    return '<div class="sevrow" style="margin-bottom:11px"><span class="sevname" style="font-weight:400">'+g.lab+
+      '</span><button class="sevbtn" data-t="'+g.id+'" aria-pressed="'+!!settings[g.id]+'">'+
+      (settings[g.id]?'On':'Off')+'</button></div>';}).join('');
+  document.getElementById('toggles').querySelectorAll('[data-t]').forEach(function(b){
+    b.onclick=function(){settings[b.dataset.t]=!settings[b.dataset.t];put(KS,settings);renderSet();renderForm();};});
+}
+['setName','setLast','setNext'].forEach(function(id){
+  document.getElementById(id).onchange=function(){
+    settings[id==='setName'?'name':id==='setLast'?'last':'next']=this.value;put(KS,settings);strip();};});
+
+document.getElementById('exportBtn').onclick=function(){
+  var blob=new Blob([JSON.stringify({v:2,who:CFG.who,settings:settings,entries:entries},null,2)],{type:'application/json'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='between-visits-'+CFG.who+'-'+isoOf(new Date())+'.json';a.click();};
+document.getElementById('importBtn').onclick=function(){document.getElementById('importFile').click();};
+document.getElementById('importFile').onchange=function(){
+  var f=this.files[0];if(!f)return;var r=new FileReader();
+  r.onload=function(){try{var d=JSON.parse(r.result);
+    if(d.who&&d.who!==CFG.who){alert('That backup is from the '+d.who+' version. Open it in that app instead.');return;}
+    if(d.entries){Object.keys(d.entries).forEach(function(k){entries[k]=d.entries[k];});put(KE,entries);}
+    if(d.settings){settings=Object.assign(settings,d.settings);put(KS,settings);}
+    strip();renderSet();renderHist();loadDraft();renderForm();alert('Restored.');}
+    catch(e){alert("That file couldn't be read. Choose the .json backup this app made.");}};
+  r.readAsText(f);};
+document.getElementById('clearBtn').onclick=function(){
+  if(confirm('Delete every week on this device? This cannot be undone. Back up first if you want to keep it.')){
+    entries={};put(KE,entries);loadDraft();renderForm();renderHist();strip();alert('Deleted.');}};
+
+function show(v){
+  document.querySelectorAll('.view').forEach(function(x){x.classList.toggle('on',x.id==='v-'+v);});
+  document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-selected',b.dataset.v===v);});
+  if(v==='hist')renderHist();if(v==='sum')renderSum();if(v==='set')renderSet();}
+document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){show(b.dataset.v);window.scrollTo(0,0);};});
+
+/* ---- add to home screen ---- */
+(function(){
+  var standalone = window.matchMedia('(display-mode: standalone)').matches
+                || window.navigator.standalone === true;
+  if(standalone) return;
+  if(get('bv.'+CFG.who+'.installed',false)) return;
+
+  var box=document.getElementById('install'), txt=document.getElementById('installTxt'),
+      btn=document.getElementById('installBtn'), done=document.getElementById('installDone');
+  var ua=navigator.userAgent||'';
+  var ios=/iPad|iPhone|iPod/.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  var android=/Android/.test(ua);
+  var touch=ios||android||navigator.maxTouchPoints>1;
+  if(!touch) return;
+
+  txt.innerHTML = ios
+    ? 'Tap the share button <span class="glyph">&#x2191;</span> at the bottom of the screen, scroll down, and choose <strong style="display:inline">Add to Home Screen</strong>. This keeps your phone from clearing what you\'ve written after a week of not opening it, so it matters.'
+    : 'Open the <span class="glyph">&#8942;</span> menu at the top right and choose <strong style="display:inline">Install app</strong> or <strong style="display:inline">Add to Home screen</strong>. This keeps everything you write from being cleared later on.';
+  box.classList.add('on');
+
+  var deferred=null;
+  window.addEventListener('beforeinstallprompt',function(e){
+    e.preventDefault();deferred=e;btn.style.display='';
+    txt.innerHTML='Tap Install below to keep this on your home screen. It stops your phone clearing what you\'ve written later on.';});
+  btn.onclick=function(){ if(!deferred)return;
+    deferred.prompt();
+    deferred.userChoice.then(function(c){
+      if(c.outcome==='accepted'){put('bv.'+CFG.who+'.installed',true);box.classList.remove('on');}
+      deferred=null;});};
+  done.onclick=function(){put('bv.'+CFG.who+'.installed',true);box.classList.remove('on');};
+  window.addEventListener('appinstalled',function(){
+    put('bv.'+CFG.who+'.installed',true);box.classList.remove('on');});
+})();
+
+if(!LS){setTimeout(function(){alert("This browser isn't allowing anything to be saved, so entries will vanish when the tab closes. Download the file and open it directly on your device.");},400);}
+loadDraft();renderForm();strip();
+</script>
